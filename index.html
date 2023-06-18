@@ -1,0 +1,859 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyers</title>
+    <link rel="stylesheet" href="/style/home.css">
+    <link rel="stylesheet" href="/style/pre.css">
+    <link rel="icon" href="/img/icon.gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <img src="img/logo.webp" alt="">
+        <div class="search-bar">
+            <input type="text" name="" id="" placeholder="Search..." class="search">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="acc-bar" id="signup" >
+            <span><i class="fa-regular fa-circle-user"></i></span>
+            <div >
+                <p>Sign in</p>
+                <h4>Account</h4>
+            </div>
+        </div>
+        <span class="cart" id="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="num">
+                0
+            </span>
+        </span>
+        
+    </div>
+  
+    <div class="menu-bar" id="menu-bar">
+        <div class="left-menu" id="bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="main-menu" id="main-menu">
+            <!-- <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li>
+                    <a href="#shop" class="active">Shop</a>
+                </li>
+                <li>
+                    <a href="#pages">Blogs</a>
+                </li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul> -->
+        </div>
+    </div>
+
+    <div class="mobile-menu">
+        <!-- <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li>
+                <a href="#shop">Shop</a>
+            </li>
+            <li>
+                <a href="#pages">Blogs</a>
+            </li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul> -->
+    </div>
+
+    <div class="signup" id="sign-content">
+        <form action="" class="signup-content">
+            <div class="container">
+                <h1 style="margin-bottom: 10px;">Sign up</h1>
+                <p style="margin-bottom: 10px;">Please fill in this form to create an account.</p>
+                <hr style="margin-bottom: 10px;">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="">
+                    <input type="checkbox" name="remember" checked="checked" style="margin-bottom: 15px;"> Remember me
+                </label>
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <div class="clearfix" style="margin-top: 25px">
+                    <button type="button" class="cancelbtn" id="close-signup">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="popup" id="popup-cart">
+
+    </div>
+    <div class="cart-menu" id="cart_content">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- Content -->
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="img/Camera/C1-1.jpg" alt="" class="cart-img">
+                <div class="detail-box">
+                    <div class="cart-product-title">Makko SmartTv 75</div>
+                    <div class="cart-price">$849.00</div>
+                    <input type="number" value="1" class="cart-quantity">
+                </div>
+                //remove cart
+                
+                <i class="fa-solid fa-trash-can  cart-remove"></i>
+                
+                
+            </div> -->
+        </div>
+        <!-- Total -->
+        <div class="total">
+            <div class="total-title">Total:</div>
+            <div class="total-price">$0</div>
+        </div>
+        <div class="btn">
+            <button type="button" class="btn-buy">Buy Now</button>
+        </div>
+        <!-- Cart Close -->
+        <i class="fa-solid fa-x" id="close-cart"></i>
+    </div>
+
+    <!-- Body -->
+
+    <div class="body">
+        <div class="left-menu">
+            <h4>All Department</h4>
+            <ul>
+                <li><a href=""><i class="fa-regular fa-chart-bar"></i> &nbsp;&nbsp; All Product</a></li>
+                <li><a href=""><i class="fa-solid fa-mobile-screen"></i> &nbsp;&nbsp; Cell Phone</a></li>
+                <li><a href=""><i class="fa-solid fa-laptop"></i> &nbsp;Computer & Laptop</a></li>
+                <li><a href=""><i class="fa-solid fa-tv"></i> &nbsp;Television </a></li>
+                <li><a href=""><i class="fa-solid fa-tablet-screen-button"></i> &nbsp;&nbsp;Tablet</a></li>
+                <li><a href=""><i class="fa-regular fa-clock"></i> &nbsp;&nbsp;Smartwatches</a></li>
+                <li><a href=""><i class="fa-solid fa-camera-retro"></i> &nbsp;&nbsp;Camera</a></li>
+                <li><a href=""><i class="fa-solid fa-headset"></i> &nbsp;&nbsp;Headset</a></li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="slide">
+                <div class="txt">
+                    <h5>#WeekendDeals</h5>
+                    <h1>Discount up to 35% <br> only this month.</h1>
+                    <button>Shop now!</button>
+                </div>
+                <div class="img">
+                    <img src="img/Laptop/L1-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="txt">
+                    <h5>Up to 35% off</h5>
+                    <h1>Moza Mini Sound 2<br> Max Blue.</h1>
+                    <button>Shop now!</button>
+                </div>
+                <div class="img">
+                    <img src="img/Speaker/S1-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="txt">
+                    <h5>New Arrival</h5>
+                    <h1>Monica Action Cam <br> Pro 3 Adventure.</h1>
+                    <button>Shop now!</button>
+                </div>
+                <div class="img">
+                    <img src="img/Camera/C1-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="txt">
+                    <h5>Promo</h5>
+                    <h1>Extra discount up <br> to 30% on mobile app.</h1>
+                    <button>Shop now!</button>
+                </div>
+                <div class="img">
+                    <img src="img/Phone/P1-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="category-con">
+            <img src="img/category/logo1.png" alt="">
+        </div>
+        <div class="category-con">
+            <img src="img/category/logo2.png" alt="">
+        </div>
+        <div class="category-con">
+            <img src="img/category/logo3.png" alt="">
+        </div>
+        <div class="category-con">
+            <img src="img/category/logo4.png" alt="">
+        </div>
+        <div class="category-con">
+            <img src="img/category/logo5.png" alt="">
+        </div>
+        <div class="category-con">
+            <img src="img/category/logo6.png" alt="">
+        </div>
+    </div>
+
+    <div class="flash">
+        <div class="flash-con">
+            <div class="flash-sale">
+                <div class="flash-img">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                    <h2>Flash Sale</h2>
+                    <p>Consectetuer tempor commodo nascetur amet nisi turpis eros adipiscing molestie</p>
+                </div>
+                <div class="flash-date">
+                    <div class="date">
+                        <p id="hours">00</p>
+                        <span>Hours</span>
+                    </div>
+                    <div class="date">
+                        <p id="minutes">00</p>
+                        <span>Minutes</span>
+                    </div>
+                    <div class="date">
+                        <p id="seconds">00</p>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="flash-con-item">
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Tv/V1-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Makko SmartTv 75</h4>
+                        <div>
+                            <h3>$899.00</h3>
+                            <p class="price">$849.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Camera/C3-3.jpg" alt=""class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Makko CamE3</h4>
+                        <div>
+                            <h3>$349.00</h3>
+                            <p class="price">$299.00</p>
+                        </div>
+                        
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Phone/P4-4.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Makko Smartphone</h4>
+                        <div>
+                            <h3>$589.00</h3>
+                            <p class="price">$539.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Speaker/S2-3.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Makko Speaker </h4>
+                        <div>
+                            <h3>$159.00</h3>
+                            <p class="price">$139.00</p>
+                        </div>
+                        <button class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+            </div> -->
+           
+        </div>
+     
+    </div>
+
+    <div class="p-3">
+        <div class="p-3-con">
+            <div class="txt">
+                <h1>Apple Book</h1>
+                <p>Don't miss the last <br> opportunity</p>
+                
+               <a href="#">Learn more</a>
+            </div>
+            <div class="img">
+                <img src="img/Laptop/L2-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="p-3-con">
+            <div class="txt">
+                <h1>Smart Watch</h1>
+                <p>Don't miss the last <br> opportunity</p>
+                
+               <a href="#">Learn more</a>
+            </div>
+            <div class="img">
+                <img src="img/Watch/W3-1-e.jpg" alt="">
+            </div>
+        </div>
+        <div class="p-3-con">
+            <div class="txt">
+                <h1> Camera</h1>
+                <p>Don't miss the last <br> opportunity</p>
+                
+               <a href="#">Learn more</a>
+            </div>
+            <div class="img">
+                <img src="img/Camera/C4-4-e.jpg" alt="">
+            </div>
+        </div>
+    </div>
+     <!-- New arrive -->
+    <div class="n-a"> 
+        <div class="war">
+            <div class="war-con">
+                <i class="fa-solid fa-truck-arrow-right"></i>
+                <h3>International Shipment</h3>
+                <p>Your orders are shipped seamlessly between countries</p>
+            </div>
+            <div class="war-con">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3>30 Days Warranty</h3>
+                <p>You have the right to return your orders within 30 days.</p>
+            </div>
+            <div class="war-con">
+                <i class="fa-regular fa-credit-card"></i>
+                <h3>Secure Payment</h3>
+                <p>Your payments are secure with our private security network.</p>
+            </div>
+        </div>
+        <div class="n-a-con">
+            <h1>New Arrival</h1>
+            <hr>
+            <!-- <div class="n-a-box"> -->
+                
+                <!-- <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Laptop/L2-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Moza Gaming Monitor 32'' FHD 244Hz</h4>
+                        <div>
+                            <h3>$799.00</h3>
+                            <p class="price">$649.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Headphone/A2-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Moza Gaming Headphone R12TZ</h4>
+                        <div>
+                            <h3>$275.00</h3>
+                            <p class="price">$249.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Phone/P5-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Mizuna 7 Max Android Smartphone bundling</h4>
+                        <div>
+                            <h3>$290.00</h3>
+                            <p class="price">$249.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Phone/P5-2.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Mizuna 7 Max Android Smartphone </h4>
+                        <div>
+                            <h3>$599.00</h3>
+                            <p class="price">$549.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Phone/P2-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Mizuna 8 Pro Android Smartphone</h4>
+                        <div>
+                            <h3>$999.00</h3>
+                            <p class="price">$829.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Watch/W1-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Banna Watch Series 3 GPS-42mm-Sport Band</h4>
+                        <div>
+                            <h3>$499.00</h3>
+                            <p class="price">$429.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Watch/W3-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Malaccan Smartwatch CT2S WaterProof Fitness Tracker</h4>
+                        <div>
+                            <h3>$289.00</h3>
+                            <p class="price">$209.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Tv/V1-4.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Digitech VR for gaming Console</h4>
+                        <div>
+                            <h3>$399.00</h3>
+                            <p class="price">$269.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Phone/P1-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Malaccan Smartwatch CT2S WaterProof Fitness Tracker</h4>
+                        <div>
+                            <h3>$289.00</h3>
+                            <p class="price">$209.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Headphone/A3-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Digitech VR for gaming Console</h4>
+                        <div>
+                            <h3>$399.00</h3>
+                            <p class="price">$269.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Tablet/T3-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Malaccan Smartwatch CT2S WaterProof Fitness Tracker</h4>
+                        <div>
+                            <h3>$289.00</h3>
+                            <p class="price">$209.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Speaker/S2-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Digitech VR for gaming Console</h4>
+                        <div>
+                            <h3>$399.00</h3>
+                            <p class="price">$269.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Laptop/L1-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Malaccan Smartwatch CT2S WaterProof Fitness Tracker</h4>
+                        <div>
+                            <h3>$289.00</h3>
+                            <p class="price">$209.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Headphone/A4-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Digitech VR for gaming Console</h4>
+                        <div>
+                            <h3>$399.00</h3>
+                            <p class="price">$269.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Camera/C4-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Malaccan Smartwatch CT2S WaterProof Fitness Tracker</h4>
+                        <div>
+                            <h3>$289.00</h3>
+                            <p class="price">$209.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="flash-item">
+                    <div class="img">
+                        <img src="img/Speaker/S1-1.jpg" alt="" class="product-img">
+                        <div class="sale">
+                            Sale!
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h4 class="product-title">Digitech VR for gaming Console</h4>
+                        <div>
+                            <h3>$399.00</h3>
+                            <p class="price">$269.00</p>
+                        </div>
+                        <button  class="add-cart">Add to cart</button>
+                    </div>
+                </div> -->
+
+                   
+                
+
+            <!-- </div> -->
+        </div>
+
+    </div>
+
+    <div class="b-p">
+        <div class="b-p-con">
+            <div class="img">
+                <i class="fa-regular fa-gem"></i>
+            </div>
+            <div class="txt">
+                <h4>Original Product</h4>
+                <p>100% Original product that covered warranty by the vendor.</p>
+            </div>
+        </div>
+        
+        <div class="b-p-con">
+            <div class="img">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="txt">
+                <h4>30 Days Warranty</h4>
+                <p>You have the right to return your orders within 30 days.</p>
+            </div>
+        </div>
+        <div class="b-p-con">
+            <div class="img">
+                <i class="fa-solid fa-box"></i>
+            </div>
+            <div class="txt">
+                <h4>Global Shipping</h4>
+                <p>Your orders are shipped seamlessly between countries</p>
+            </div>
+        </div>
+        <div class="b-p-con">
+            <div class="img">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="txt">
+                <h4>100% Secure</h4>
+                <p>Your payments are secure with our private security network.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="f-1">
+            <img src="img/logo.webp" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <div class="help">
+                <div>
+                    <i class="fa-solid fa-headphones"></i>
+                </div>
+               
+                <div class="ph">
+                    <h5>Need help? Call us!</h5>
+                    <h3>800-7000-234</h3>
+                </div>
+            </div>
+            <div class="soc">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        <div class="f-2">
+            <div class="f-2-con">
+                <h3>Customer Service</h3>
+                <p>Help Center</p>
+                <p>Track your order</p>
+                <p>My Account</p>
+                <p>Return & Replacements</p>
+                <p>Contact us</p>
+            </div>
+            <div class="f-2-con">
+                <h3>Get to Know Us</h3>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Leadership</p>
+                <p>News & Article</p>
+                <p>Legal Notice</p>
+            </div>
+            <div class="f-2-con">
+                <h3>Partnerships</h3>
+                <p>Affiliate Program</p>
+                <p>Advertise with Us</p>
+                <p>Self-Publish with Us</p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <p>Copyright © 2023 Buyers Bulk Store, All rights reserved.</p>
+        <div>
+            <img src="img/payment/payment.png" alt="">
+        </div>
+    </div>
+
+    <div class="up">
+        <i class="fa-solid fa-caret-up"></i>
+    </div>
+    <div class="popup-p ">
+       
+        <div class="pre-body">
+            <span class="close-pro" id=close-pro>
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <!-- <div class="info-pro"> 
+                <div class="img">
+                    <div class="img-container">
+                        <img src="img2/phone/p3-1.jpg" alt="">
+                    </div>
+                </div> 
+                <div class="txt">
+                    <h2 class="p-title">Iphone Xr</h2>
+                    <hr>
+                    <h3 class="p-price">$200</h3>
+                    <ul>
+                        <li>Wireless, Bluetooth, USB, HDMI</li>
+                        <li>4K Ultra HD (2160P)</li>
+                        <li>Quantum Processor 4K</li>
+                    </ul>
+                    <input type="number" value="1">
+                    <div>
+                        <button>Add to Cart</button>
+                    </div>
+                    
+                    <hr>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div class="store">
+                        <p><i class="fa-solid fa-shop"></i> &nbsp;Pickup: Available today at store</p>
+                        <p><i class="fa-solid fa-shield-dog"></i> &nbsp;&nbsp;1 Year Local Official Distributor Warranty</p>
+                    </div>
+                </div>
+                <div class="war">
+                    <div class="war-con">
+                        <i class="fa-solid fa-truck-arrow-right"></i>
+                        <h3>International Shipment</h3>
+                        <p>Your orders are shipped seamlessly between countries</p>
+                    </div>
+                    <div class="war-con">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <h3>30 Days Warranty</h3>
+                        <p>You have the right to return your orders within 30 days.</p>
+                    </div>
+                    <div class="war-con">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <h3>Secure Payment</h3>
+                        <p>Your payments are secure with our private security network.</p>
+                    </div>
+                </div> 
+            </div> -->
+            <!-- <div class="img">
+                <div class="img-container">
+                    <img src="img2/phone/p3-1.jpg" alt="">
+                </div>
+            </div> -->
+            <!-- <div class="txt">
+                <h2 class="p-title">Iphone Xr</h2>
+                <hr>
+                <h3 class="p-price">$200</h3>
+                <ul>
+                    <li>Wireless, Bluetooth, USB, HDMI</li>
+                    <li>4K Ultra HD (2160P)</li>
+                    <li>Quantum Processor 4K</li>
+                </ul>
+                <input type="number" value="1">
+                <div>
+                    <button>Add to Cart</button>
+                </div>
+                
+                <hr>
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="store">
+                    <p><i class="fa-solid fa-shop"></i> &nbsp;Pickup: Available today at store</p>
+                    <p><i class="fa-solid fa-shield-dog"></i> &nbsp;&nbsp;1 Year Local Official Distributor Warranty</p>
+                </div>
+            </div>
+            <div class="war">
+                <div class="war-con">
+                    <i class="fa-solid fa-truck-arrow-right"></i>
+                    <h3>International Shipment</h3>
+                    <p>Your orders are shipped seamlessly between countries</p>
+                </div>
+                <div class="war-con">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <h3>30 Days Warranty</h3>
+                    <p>You have the right to return your orders within 30 days.</p>
+                </div>
+                <div class="war-con">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <h3>Secure Payment</h3>
+                    <p>Your payments are secure with our private security network.</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+   
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</body> 
+<script src="/Script/home.js"></script> 
+<script src="/Script/navbar.js"></script>
+<script src="/Script/addcart.js"></script>
+<script src="/Script/up.js"></script>
+<script src="Script/showde.js"></script>
+<script src="Script/zoom.js"></script>
+</html>
